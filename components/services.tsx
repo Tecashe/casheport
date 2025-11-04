@@ -178,21 +178,11 @@ export default function Services() {
               />
 
               {/* Main card */}
-              <div
-                className="relative h-full p-8 rounded-2xl bg-black/40 backdrop-blur-sm border border-white/20
-                shadow-[0_8px_24px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.1)]
-                group-hover:shadow-[0_24px_80px_rgba(255,255,255,0.2),inset_0_2px_0_rgba(255,255,255,0.15)]
-                group-hover:border-white/40
-                transition-all duration-500
-                group-hover:translate-y-[-16px]
-                will-change-transform
-                flex flex-col"
-              >
+              <div className="relative h-full p-8 rounded-2xl bg-black/40 backdrop-blur-sm border border-white/20 shadow-[0_8px_24px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.1)] group-hover:shadow-[0_24px_80px_rgba(255,255,255,0.2),inset_0_2px_0_rgba(255,255,255,0.15)] group-hover:border-white/40 transition-all duration-500 group-hover:translate-y-[-16px] will-change-transform flex flex-col">
                 {/* Badge */}
                 {service.badge && (
                   <div
-                    className="absolute -top-4 right-6 px-4 py-2 bg-white text-black font-bold text-xs rounded-full
-                    shadow-[0_8px_24px_rgba(255,255,255,0.3)]"
+                    className="absolute -top-4 right-6 px-4 py-2 bg-white text-black font-bold text-xs rounded-full shadow-[0_8px_24px_rgba(255,255,255,0.3)]"
                     style={{
                       animation: inView ? "float 3s ease-in-out infinite" : "none",
                     }}
@@ -202,14 +192,7 @@ export default function Services() {
                 )}
 
                 {/* Icon container with lift */}
-                <div
-                  className="mb-6 w-16 h-16 rounded-xl bg-gradient-to-br from-white/20 to-white/5
-                  flex items-center justify-center text-white/80 group-hover:text-white
-                  shadow-[0_8px_20px_rgba(0,0,0,0.2)]
-                  group-hover:shadow-[0_16px_40px_rgba(255,255,255,0.2)]
-                  group-hover:translate-y-[-8px]
-                  transition-all duration-300"
-                >
+                <div className="mb-6 w-16 h-16 rounded-xl bg-gradient-to-br from-white/20 to-white/5 flex items-center justify-center text-white/80 group-hover:text-white shadow-[0_8px_20px_rgba(0,0,0,0.2)] group-hover:shadow-[0_16px_40px_rgba(255,255,255,0.2)] group-hover:translate-y-[-8px] transition-all duration-300">
                   {service.icon}
                 </div>
 
@@ -234,10 +217,7 @@ export default function Services() {
                         transform: hoveredService === service.id ? "translateX(0)" : "translateX(-10px)",
                       }}
                     >
-                      <div
-                        className="w-2 h-2 rounded-full bg-white group-hover:shadow-[0_0_12px_rgba(255,255,255,0.4)]
-                        transition-all"
-                      />
+                      <div className="w-2 h-2 rounded-full bg-white group-hover:shadow-[0_0_12px_rgba(255,255,255,0.4)] transition-all" />
                       {detail}
                     </div>
                   ))}
@@ -254,15 +234,7 @@ export default function Services() {
                     </span>
                   </div>
 
-                  <button
-                    className="w-full py-3 px-4 rounded-lg bg-white/10 border border-white/20 text-white font-semibold
-                    group-hover:bg-white hover:text-black
-                    shadow-[0_8px_20px_rgba(0,0,0,0.2)]
-                    group-hover:shadow-[0_16px_40px_rgba(255,255,255,0.25)]
-                    group-hover:translate-y-[-4px] active:translate-y-[-1px]
-                    transition-all duration-300
-                    flex items-center justify-center gap-2 relative overflow-hidden"
-                  >
+                  <button className="w-full py-3 px-4 rounded-lg bg-white/10 border border-white/20 text-white font-semibold group-hover:bg-white hover:text-black shadow-[0_8px_20px_rgba(0,0,0,0.2)] group-hover:shadow-[0_16px_40px_rgba(255,255,255,0.25)] group-hover:translate-y-[-4px] active:translate-y-[-1px] transition-all duration-300 flex items-center justify-center gap-2 relative overflow-hidden">
                     <span className="relative z-10">Learn More</span>
                     <ArrowRight size={18} className="relative z-10 group-hover:translate-x-1 transition-transform" />
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity -translate-x-full group-hover:translate-x-full duration-700" />
@@ -275,8 +247,7 @@ export default function Services() {
 
         {/* CTA Section */}
         <div
-          className="mt-24 p-16 rounded-3xl bg-gradient-to-br from-white/10 to-white/5 border border-white/20
-          shadow-[0_20px_60px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.1)]"
+          className="mt-24 p-16 rounded-3xl bg-gradient-to-br from-white/10 to-white/5 border border-white/20 shadow-[0_20px_60px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.1)]"
           style={{
             animation: inView ? "fadeInUp 0.8s ease-out 0.4s forwards" : "none",
             opacity: inView ? 1 : 0,
@@ -293,11 +264,7 @@ export default function Services() {
             <div className="flex gap-4 justify-end">
               <a
                 href="#contact"
-                className="group/btn relative px-8 py-4 bg-white text-black font-bold rounded-xl
-                shadow-[0_12px_40px_rgba(255,255,255,0.25)]
-                hover:shadow-[0_20px_60px_rgba(255,255,255,0.35)]
-                hover:translate-y-[-8px] active:translate-y-[-3px]
-                transition-all duration-300 flex items-center gap-2 overflow-hidden"
+                className="group/btn relative px-8 py-4 bg-white text-black font-bold rounded-xl shadow-[0_12px_40px_rgba(255,255,255,0.25)] hover:shadow-[0_20px_60px_rgba(255,255,255,0.35)] hover:translate-y-[-8px] active:translate-y-[-3px] transition-all duration-300 flex items-center gap-2 overflow-hidden"
               >
                 <span className="relative z-10">Get in Touch</span>
                 <ArrowRight size={20} className="relative z-10 group-hover/btn:translate-x-1 transition-transform" />

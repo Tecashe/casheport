@@ -356,7 +356,7 @@ function ProjectGrid() {
       </div>
 
       {/* Project Modl */}
-      <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} allProjects={projects||""} />
+      <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} allProjects={projects} />
 
       <style jsx>{`
         @keyframes slideInUp {

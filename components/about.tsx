@@ -1,4 +1,4 @@
-"use client"
+// "use client"
 
 import { useEffect, useRef, useState } from "react"
 import { Code2, Smartphone, Zap, Database, Cpu, Layers } from "lucide-react"
@@ -110,13 +110,7 @@ export default function About() {
               />
 
               {/* Main image container */}
-              <div
-                className="absolute inset-0 rounded-3xl overflow-hidden 
-                shadow-[0_20px_60px_rgba(0,0,0,0.5),inset_0_1px_0_rgba(255,255,255,0.1)]
-                bg-gradient-to-br from-white/10 to-black border border-white/20
-                group hover:shadow-[0_30px_80px_rgba(255,255,255,0.15)]
-                transition-all duration-500"
-              >
+              <div className="absolute inset-0 rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.5),inset_0_1px_0_rgba(255,255,255,0.1)] bg-gradient-to-br from-white/10 to-black border border-white/20 group hover:shadow-[0_30px_80px_rgba(255,255,255,0.15)] transition-all duration-500">
                 <div className="w-full h-full bg-gradient-to-br from-gray-700 to-black flex items-center justify-center text-8xl">
                   👨‍💻
                 </div>
@@ -138,8 +132,7 @@ export default function About() {
 
               {/* Floating badges */}
               <div
-                className="absolute -top-4 -right-4 px-4 py-2 bg-white text-black font-bold rounded-full text-sm
-                shadow-[0_10px_30px_rgba(255,255,255,0.3)]"
+                className="absolute -top-4 -right-4 px-4 py-2 bg-white text-black font-bold rounded-full text-sm shadow-[0_10px_30px_rgba(255,255,255,0.3)]"
                 style={{
                   animation: inView ? "float 3s ease-in-out infinite" : "none",
                 }}
@@ -147,8 +140,7 @@ export default function About() {
                 5+ yrs
               </div>
               <div
-                className="absolute -bottom-4 -left-4 px-4 py-2 bg-white/20 text-white font-bold rounded-full text-sm border border-white/40
-                shadow-[0_10px_30px_rgba(255,255,255,0.1)]"
+                className="absolute -bottom-4 -left-4 px-4 py-2 bg-white/20 text-white font-bold rounded-full text-sm border border-white/40 shadow-[0_10px_30px_rgba(255,255,255,0.1)]"
                 style={{
                   animation: inView ? "float 4s ease-in-out infinite 0.5s" : "none",
                 }}
@@ -209,9 +201,7 @@ export default function About() {
               ].map((stat, idx) => (
                 <div
                   key={idx}
-                  className="p-4 rounded-lg bg-white/5 border border-white/10 
-                  hover:bg-white/10 hover:border-white/30 hover:shadow-[0_8px_20px_rgba(255,255,255,0.15)]
-                  transition-all duration-300 hover:translate-y-[-4px] text-center group"
+                  className="p-4 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/30 hover:shadow-[0_8px_20px_rgba(255,255,255,0.15)] transition-all duration-300 hover:translate-y-[-4px] text-center group"
                 >
                   <div className="text-3xl font-bold text-white group-hover:text-white/90 transition-colors">
                     {stat.number}
@@ -267,30 +257,12 @@ export default function About() {
                 }}
               >
                 {/* Background glow on hover */}
-                <div
-                  className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 opacity-0 group-hover:opacity-100 
-                  blur-xl transition-all duration-500"
-                />
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 opacity-0 group-hover:opacity-100 blur-xl transition-all duration-500" />
 
                 {/* Main card */}
-                <div
-                  className="relative p-8 rounded-2xl bg-black/40 backdrop-blur-sm border border-white/20 
-                  shadow-[0_8px_24px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.1)]
-                  group-hover:shadow-[0_20px_60px_rgba(255,255,255,0.2),inset_0_1px_0_rgba(255,255,255,0.2)]
-                  group-hover:border-white/40
-                  transition-all duration-500 cursor-default
-                  group-hover:translate-y-[-12px]
-                  will-change-transform"
-                >
+                <div className="relative p-8 rounded-2xl bg-black/40 backdrop-blur-sm border border-white/20 shadow-[0_8px_24px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.1)] group-hover:shadow-[0_20px_60px_rgba(255,255,255,0.2),inset_0_1px_0_rgba(255,255,255,0.2)] group-hover:border-white/40 transition-all duration-500 cursor-default group-hover:translate-y-[-12px] will-change-transform">
                   {/* Icon with lift effect */}
-                  <div
-                    className="mb-6 w-16 h-16 rounded-xl bg-gradient-to-br from-white/20 to-white/5 
-                    flex items-center justify-center text-white/80 group-hover:text-white
-                    shadow-[0_8px_20px_rgba(0,0,0,0.2)]
-                    group-hover:shadow-[0_12px_36px_rgba(255,255,255,0.15)]
-                    group-hover:translate-y-[-4px]
-                    transition-all duration-300"
-                  >
+                  <div className="mb-6 w-16 h-16 rounded-xl bg-gradient-to-br from-white/20 to-white/5 flex items-center justify-center text-white/80 group-hover:text-white shadow-[0_8px_20px_rgba(0,0,0,0.2)] group-hover:shadow-[0_12px_36px_rgba(255,255,255,0.15)] group-hover:translate-y-[-4px] transition-all duration-300">
                     <Icon size={32} />
                   </div>
 
@@ -311,9 +283,7 @@ export default function About() {
                     </div>
                     <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden border border-white/20 group-hover:border-white/40 transition-colors">
                       <div
-                        className="h-full bg-gradient-to-r from-white via-white/80 to-white/60 rounded-full 
-                        shadow-[0_0_12px_rgba(255,255,255,0.3)]
-                        transition-all duration-1000 ease-out"
+                        className="h-full bg-gradient-to-r from-white via-white/80 to-white/60 rounded-full shadow-[0_0_12px_rgba(255,255,255,0.3)] transition-all duration-1000 ease-out"
                         style={{
                           width: inView && isHovered ? `${skill.proficiency}%` : "0%",
                         }}
@@ -333,10 +303,7 @@ export default function About() {
                           transform: isHovered ? "translateX(0)" : "translateX(-10px)",
                         }}
                       >
-                        <span
-                          className="w-1.5 h-1.5 bg-white rounded-full group-hover:shadow-[0_0_8px_rgba(255,255,255,0.4)]
-                          transition-all"
-                        />
+                        <span className="w-1.5 h-1.5 bg-white rounded-full group-hover:shadow-[0_0_8px_rgba(255,255,255,0.4)] transition-all" />
                         {item}
                       </li>
                     ))}
@@ -349,8 +316,7 @@ export default function About() {
 
         {/* Call to action */}
         <div
-          className="mt-20 p-12 rounded-2xl bg-gradient-to-r from-white/10 to-white/5 border border-white/20
-          shadow-[0_12px_40px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.1)]"
+          className="mt-20 p-12 rounded-2xl bg-gradient-to-r from-white/10 to-white/5 border border-white/20 shadow-[0_12px_40px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.1)]"
           style={{
             animation: inView ? "fadeInUp 0.8s ease-out 0.4s forwards" : "none",
             opacity: inView ? 1 : 0,
@@ -360,11 +326,7 @@ export default function About() {
             <p className="text-white/70 mb-6 text-lg">Ready to collaborate on your next project?</p>
             <a
               href="#contact"
-              className="inline-block px-8 py-4 bg-white text-black font-bold rounded-xl
-              shadow-[0_12px_36px_rgba(255,255,255,0.25)]
-              hover:shadow-[0_20px_60px_rgba(255,255,255,0.35)]
-              hover:translate-y-[-6px] active:translate-y-[-2px]
-              transition-all duration-300 overflow-hidden relative group/cta"
+              className="inline-block px-8 py-4 bg-white text-black font-bold rounded-xl shadow-[0_12px_36px_rgba(255,255,255,0.25)] hover:shadow-[0_20px_60px_rgba(255,255,255,0.35)] hover:translate-y-[-6px] active:translate-y-[-2px] transition-all duration-300 overflow-hidden relative group/cta"
             >
               <span className="relative z-10">Let's Build Something Amazing</span>
               <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover/cta:opacity-100 transition-opacity -translate-x-full group-hover/cta:translate-x-full duration-700" />

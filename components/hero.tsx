@@ -145,28 +145,13 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col md:flex-row gap-6 justify-center">
-            <button
-              className="group relative px-8 py-4 md:py-5 bg-white text-black font-semibold rounded-xl transition-all duration-300 
-              shadow-[0_10px_30px_rgba(255,255,255,0.2),0_0_0_1px_rgba(255,255,255,0.1)]
-              hover:shadow-[0_30px_60px_rgba(255,255,255,0.3),0_0_0_1px_rgba(255,255,255,0.2)]
-              hover:translate-y-[-8px] active:translate-y-[-4px]
-              before:absolute before:inset-0 before:rounded-xl before:bg-gradient-to-b before:from-white/20 before:to-transparent before:opacity-0 group-hover:before:opacity-100 before:transition-opacity before:duration-300
-              flex items-center justify-center gap-2 overflow-hidden"
-            >
+            <button className="group relative px-8 py-4 md:py-5 bg-white text-black font-semibold rounded-xl transition-all duration-300 shadow-[0_10px_30px_rgba(255,255,255,0.2),0_0_0_1px_rgba(255,255,255,0.1)] hover:shadow-[0_30px_60px_rgba(255,255,255,0.3),0_0_0_1px_rgba(255,255,255,0.2)] hover:translate-y-[-8px] active:translate-y-[-4px] before:absolute before:inset-0 before:rounded-xl before:bg-gradient-to-b before:from-white/20 before:to-transparent before:opacity-0 group-hover:before:opacity-100 before:transition-opacity before:duration-300 flex items-center justify-center gap-2 overflow-hidden">
               <span className="relative z-10">View My Work</span>
               <ArrowDown size={20} className="relative z-10 group-hover:translate-y-1 transition-transform" />
               <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity -translate-x-full group-hover:translate-x-full duration-700" />
             </button>
 
-            <button
-              className="group relative px-8 py-4 md:py-5 bg-transparent border-2 border-white/40 text-white font-semibold rounded-xl
-              transition-all duration-300
-              shadow-[0_10px_30px_rgba(255,255,255,0.05),inset_0_1px_0_rgba(255,255,255,0.1)]
-              hover:shadow-[0_20px_50px_rgba(255,255,255,0.15),inset_0_1px_0_rgba(255,255,255,0.2)]
-              hover:bg-white/10 hover:border-white/80 hover:translate-y-[-6px] active:translate-y-[-2px]
-              before:absolute before:inset-0 before:rounded-xl before:bg-gradient-to-b before:from-white/10 before:to-transparent before:opacity-0 group-hover:before:opacity-100 before:transition-opacity before:duration-300
-              overflow-hidden"
-            >
+            <button className="group relative px-8 py-4 md:py-5 bg-transparent border-2 border-white/40 text-white font-semibold rounded-xl transition-all duration-300 shadow-[0_10px_30px_rgba(255,255,255,0.05),inset_0_1px_0_rgba(255,255,255,0.1)] hover:shadow-[0_20px_50px_rgba(255,255,255,0.15),inset_0_1px_0_rgba(255,255,255,0.2)] hover:bg-white/10 hover:border-white/80 hover:translate-y-[-6px] active:translate-y-[-2px] before:absolute before:inset-0 before:rounded-xl before:bg-gradient-to-b before:from-white/10 before:to-transparent before:opacity-0 group-hover:before:opacity-100 before:transition-opacity before:duration-300 overflow-hidden">
               <span className="relative z-10">Get In Touch</span>
               <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity -translate-x-full group-hover:translate-x-full duration-700" />
             </button>

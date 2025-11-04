@@ -1,4 +1,4 @@
-"use client"
+// "use client"
 
 import type React from "react"
 
@@ -147,10 +147,7 @@ export default function Contact() {
 
         <div
           ref={formRef}
-          className="p-8 md:p-12 rounded-3xl bg-black/40 backdrop-blur-xl border border-white/20
-          shadow-[0_20px_80px_rgba(0,0,0,0.5),inset_0_1px_0_rgba(255,255,255,0.1)]
-          hover:shadow-[0_30px_100px_rgba(255,255,255,0.1)]
-          transition-all duration-500"
+          className="p-8 md:p-12 rounded-3xl bg-black/40 backdrop-blur-xl border border-white/20 shadow-[0_20px_80px_rgba(0,0,0,0.5),inset_0_1px_0_rgba(255,255,255,0.1)] hover:shadow-[0_30px_100px_rgba(255,255,255,0.1)] transition-all duration-500"
           style={{
             animation: inView ? "slideInUp 0.8s ease-out 0.2s forwards" : "none",
             opacity: inView ? 1 : 0,
@@ -159,8 +156,7 @@ export default function Contact() {
           {submitted ? (
             <div className="text-center py-16">
               <div
-                className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6 
-                shadow-[0_10px_40px_rgba(255,255,255,0.15)]"
+                className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6 shadow-[0_10px_40px_rgba(255,255,255,0.15)]"
                 style={{
                   animation: "bounceIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards",
                 }}
@@ -190,12 +186,7 @@ export default function Contact() {
                       setFormState({ ...formState, name: e.target.value })
                       if (errors.name) setErrors({ ...errors, name: undefined })
                     }}
-                    className={`w-full px-5 py-4 bg-black/50 backdrop-blur-sm rounded-lg text-white placeholder-white/30
-                    border-2 transition-all duration-300
-                    shadow-[inset_0_2px_8px_rgba(0,0,0,0.3),0_0_0_1px_rgba(255,255,255,0.1)]
-                    focus:shadow-[inset_0_2px_8px_rgba(0,0,0,0.3),0_0_20px_rgba(255,255,255,0.15)]
-                    focus:outline-none focus:translate-y-[-2px]
-                    ${errors.name ? "border-red-500/50 focus:border-red-500" : "border-white/20 focus:border-white/60"}`}
+                    className={`w-full px-5 py-4 bg-black/50 backdrop-blur-sm rounded-lg text-white placeholder-white/30 border-2 transition-all duration-300 shadow-[inset_0_2px_8px_rgba(0,0,0,0.3),0_0_0_1px_rgba(255,255,255,0.1)] focus:shadow-[inset_0_2px_8px_rgba(0,0,0,0.3),0_0_20px_rgba(255,255,255,0.15)] focus:outline-none focus:translate-y-[-2px] ${errors.name ? "border-red-500/50 focus:border-red-500" : "border-white/20 focus:border-white/60"}`}
                     placeholder="Your name"
                   />
                   {errors.name && (
@@ -223,12 +214,7 @@ export default function Contact() {
                       setFormState({ ...formState, email: e.target.value })
                       if (errors.email) setErrors({ ...errors, email: undefined })
                     }}
-                    className={`w-full px-5 py-4 bg-black/50 backdrop-blur-sm rounded-lg text-white placeholder-white/30
-                    border-2 transition-all duration-300
-                    shadow-[inset_0_2px_8px_rgba(0,0,0,0.3),0_0_0_1px_rgba(255,255,255,0.1)]
-                    focus:shadow-[inset_0_2px_8px_rgba(0,0,0,0.3),0_0_20px_rgba(255,255,255,0.15)]
-                    focus:outline-none focus:translate-y-[-2px]
-                    ${errors.email ? "border-red-500/50 focus:border-red-500" : "border-white/20 focus:border-white/60"}`}
+                    className={`w-full px-5 py-4 bg-black/50 backdrop-blur-sm rounded-lg text-white placeholder-white/30 border-2 transition-all duration-300 shadow-[inset_0_2px_8px_rgba(0,0,0,0.3),0_0_0_1px_rgba(255,255,255,0.1)] focus:shadow-[inset_0_2px_8px_rgba(0,0,0,0.3),0_0_20px_rgba(255,255,255,0.15)] focus:outline-none focus:translate-y-[-2px] ${errors.email ? "border-red-500/50 focus:border-red-500" : "border-white/20 focus:border-white/60"}`}
                     placeholder="your@email.com"
                   />
                   {errors.email && (
@@ -256,12 +242,7 @@ export default function Contact() {
                       setFormState({ ...formState, subject: e.target.value })
                       if (errors.subject) setErrors({ ...errors, subject: undefined })
                     }}
-                    className={`w-full px-5 py-4 bg-black/50 backdrop-blur-sm rounded-lg text-white placeholder-white/30
-                    border-2 transition-all duration-300
-                    shadow-[inset_0_2px_8px_rgba(0,0,0,0.3),0_0_0_1px_rgba(255,255,255,0.1)]
-                    focus:shadow-[inset_0_2px_8px_rgba(0,0,0,0.3),0_0_20px_rgba(255,255,255,0.15)]
-                    focus:outline-none focus:translate-y-[-2px]
-                    ${errors.subject ? "border-red-500/50 focus:border-red-500" : "border-white/20 focus:border-white/60"}`}
+                    className={`w-full px-5 py-4 bg-black/50 backdrop-blur-sm rounded-lg text-white placeholder-white/30 border-2 transition-all duration-300 shadow-[inset_0_2px_8px_rgba(0,0,0,0.3),0_0_0_1px_rgba(255,255,255,0.1)] focus:shadow-[inset_0_2px_8px_rgba(0,0,0,0.3),0_0_20px_rgba(255,255,255,0.15)] focus:outline-none focus:translate-y-[-2px] ${errors.subject ? "border-red-500/50 focus:border-red-500" : "border-white/20 focus:border-white/60"}`}
                     placeholder="What's this about?"
                   />
                   {errors.subject && (
@@ -291,12 +272,7 @@ export default function Contact() {
                       if (errors.message) setErrors({ ...errors, message: undefined })
                     }}
                     rows={6}
-                    className={`w-full px-5 py-4 bg-black/50 backdrop-blur-sm rounded-lg text-white placeholder-white/30
-                    border-2 transition-all duration-300 resize-none
-                    shadow-[inset_0_2px_8px_rgba(0,0,0,0.3),0_0_0_1px_rgba(255,255,255,0.1)]
-                    focus:shadow-[inset_0_2px_8px_rgba(0,0,0,0.3),0_0_20px_rgba(255,255,255,0.15)]
-                    focus:outline-none focus:translate-y-[-2px]
-                    ${errors.message ? "border-red-500/50 focus:border-red-500" : "border-white/20 focus:border-white/60"}`}
+                    className={`w-full px-5 py-4 bg-black/50 backdrop-blur-sm rounded-lg text-white placeholder-white/30 border-2 transition-all duration-300 resize-none shadow-[inset_0_2px_8px_rgba(0,0,0,0.3),0_0_0_1px_rgba(255,255,255,0.1)] focus:shadow-[inset_0_2px_8px_rgba(0,0,0,0.3),0_0_20px_rgba(255,255,255,0.15)] focus:outline-none focus:translate-y-[-2px] ${errors.message ? "border-red-500/50 focus:border-red-500" : "border-white/20 focus:border-white/60"}`}
                     placeholder="Tell me about your project..."
                   />
                   {errors.message && (
@@ -320,13 +296,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full py-4 px-6 bg-white text-black font-bold rounded-xl
-                  shadow-[0_12px_40px_rgba(255,255,255,0.25),inset_0_1px_0_rgba(255,255,255,0.3)]
-                  hover:shadow-[0_20px_60px_rgba(255,255,255,0.35)]
-                  hover:translate-y-[-6px] active:translate-y-[-2px]
-                  disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0
-                  transition-all duration-300
-                  flex items-center justify-center gap-2 relative overflow-hidden group"
+                  className="w-full py-4 px-6 bg-white text-black font-bold rounded-xl shadow-[0_12px_40px_rgba(255,255,255,0.25),inset_0_1px_0_rgba(255,255,255,0.3)] hover:shadow-[0_20px_60px_rgba(255,255,255,0.35)] hover:translate-y-[-6px] active:translate-y-[-2px] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 transition-all duration-300 flex items-center justify-center gap-2 relative overflow-hidden group"
                 >
                   {isLoading ? (
                     <>
@@ -361,12 +331,7 @@ export default function Contact() {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className={`group w-14 h-14 flex items-center justify-center bg-white/5 backdrop-blur-sm border border-white/20 rounded-full
-              hover:bg-white/15 hover:border-white/60 ${color}
-              shadow-[0_8px_24px_rgba(0,0,0,0.3)]
-              hover:shadow-[0_16px_40px_rgba(255,255,255,0.2)]
-              hover:translate-y-[-6px]
-              transition-all duration-300`}
+              className={`group w-14 h-14 flex items-center justify-center bg-white/5 backdrop-blur-sm border border-white/20 rounded-full hover:bg-white/15 hover:border-white/60 ${color} shadow-[0_8px_24px_rgba(0,0,0,0.3)] hover:shadow-[0_16px_40px_rgba(255,255,255,0.2)] hover:translate-y-[-6px] transition-all duration-300`}
               title={label}
               style={{
                 animation: inView ? `slideInUp 0.6s ease-out ${0.65 + idx * 0.08}s forwards` : "none",

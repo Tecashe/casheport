@@ -82,10 +82,7 @@ export default function Testimonials() {
                 key={testimonial.id}
                 className={`absolute inset-0 transition-opacity duration-700 ${activeIndex === idx ? "opacity-100" : "opacity-0 pointer-events-none"}`}
               >
-                <div
-                  className="relative min-h-96 p-12 rounded-3xl bg-gradient-to-br from-black/40 to-black/60 backdrop-blur-xl border border-white/20 
-                  shadow-[0_20px_60px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.1)]"
-                >
+                <div className="relative min-h-96 p-12 rounded-3xl bg-gradient-to-br from-black/40 to-black/60 backdrop-blur-xl border border-white/20 shadow-[0_20px_60px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.1)]">
                   <div className="flex gap-4 mb-6">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star key={i} size={20} className="fill-yellow-400 text-yellow-400" />
@@ -138,8 +135,7 @@ export default function Testimonials() {
                   scroll("left")
                   setIsAutoPlay(false)
                 }}
-                className="group relative w-12 h-12 rounded-full bg-white/10 border border-white/20 hover:border-white/60 flex items-center justify-center text-white transition-all duration-300 
-                  hover:bg-white/20 hover:shadow-[0_10px_30px_rgba(255,255,255,0.15)] hover:translate-y-[-2px]"
+                className="group relative w-12 h-12 rounded-full bg-white/10 border border-white/20 hover:border-white/60 flex items-center justify-center text-white transition-all duration-300 hover:bg-white/20 hover:shadow-[0_10px_30px_rgba(255,255,255,0.15)] hover:translate-y-[-2px]"
               >
                 <ChevronLeft size={24} />
               </button>
@@ -148,8 +144,7 @@ export default function Testimonials() {
                   scroll("right")
                   setIsAutoPlay(false)
                 }}
-                className="group relative w-12 h-12 rounded-full bg-white/10 border border-white/20 hover:border-white/60 flex items-center justify-center text-white transition-all duration-300 
-                  hover:bg-white/20 hover:shadow-[0_10px_30px_rgba(255,255,255,0.15)] hover:translate-y-[-2px]"
+                className="group relative w-12 h-12 rounded-full bg-white/10 border border-white/20 hover:border-white/60 flex items-center justify-center text-white transition-all duration-300 hover:bg-white/20 hover:shadow-[0_10px_30px_rgba(255,255,255,0.15)] hover:translate-y-[-2px]"
               >
                 <ChevronRight size={24} />
               </button>
